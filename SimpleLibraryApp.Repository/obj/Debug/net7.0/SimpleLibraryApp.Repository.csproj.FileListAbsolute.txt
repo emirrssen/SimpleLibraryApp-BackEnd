@@ -1,0 +1,15 @@
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Repository/bin/Debug/net7.0/SimpleLibraryApp.Repository.deps.json
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Repository/bin/Debug/net7.0/SimpleLibraryApp.Repository.dll
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Repository/bin/Debug/net7.0/SimpleLibraryApp.Repository.pdb
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Repository/bin/Debug/net7.0/SimpleLibraryApp.Core.dll
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Repository/bin/Debug/net7.0/SimpleLibraryApp.Core.pdb
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Repository/obj/Debug/net7.0/SimpleLibraryApp.Repository.csproj.AssemblyReference.cache
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Repository/obj/Debug/net7.0/SimpleLibraryApp.Repository.GeneratedMSBuildEditorConfig.editorconfig
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Repository/obj/Debug/net7.0/SimpleLibraryApp.Repository.AssemblyInfoInputs.cache
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Repository/obj/Debug/net7.0/SimpleLibraryApp.Repository.AssemblyInfo.cs
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Repository/obj/Debug/net7.0/SimpleLibraryApp.Repository.csproj.CoreCompileInputs.cache
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Repository/obj/Debug/net7.0/SimpleLibraryApp.Repository.csproj.CopyComplete
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Repository/obj/Debug/net7.0/SimpleLibraryApp.Repository.dll
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Repository/obj/Debug/net7.0/refint/SimpleLibraryApp.Repository.dll
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Repository/obj/Debug/net7.0/SimpleLibraryApp.Repository.pdb
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Repository/obj/Debug/net7.0/ref/SimpleLibraryApp.Repository.dll

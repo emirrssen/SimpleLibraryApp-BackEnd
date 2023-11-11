@@ -1,0 +1,11 @@
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Core/bin/Debug/net7.0/SimpleLibraryApp.Core.deps.json
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Core/bin/Debug/net7.0/SimpleLibraryApp.Core.dll
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Core/bin/Debug/net7.0/SimpleLibraryApp.Core.pdb
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Core/obj/Debug/net7.0/SimpleLibraryApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Core/obj/Debug/net7.0/SimpleLibraryApp.Core.AssemblyInfoInputs.cache
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Core/obj/Debug/net7.0/SimpleLibraryApp.Core.AssemblyInfo.cs
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Core/obj/Debug/net7.0/SimpleLibraryApp.Core.csproj.CoreCompileInputs.cache
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Core/obj/Debug/net7.0/SimpleLibraryApp.Core.dll
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Core/obj/Debug/net7.0/refint/SimpleLibraryApp.Core.dll
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Core/obj/Debug/net7.0/SimpleLibraryApp.Core.pdb
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Core/obj/Debug/net7.0/ref/SimpleLibraryApp.Core.dll
