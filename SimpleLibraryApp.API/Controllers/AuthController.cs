@@ -1,6 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using SimpleLibraryApp.Core.Aggregates.AuthAggregates;
 
 namespace SimpleLibraryApp.API.Controllers
 {
@@ -8,15 +7,19 @@ namespace SimpleLibraryApp.API.Controllers
     [ApiController]
     public class AuthController
     {
-        private readonly IAuthRepository _repo;
+        private readonly IMediator _mediator;
 
-        public AuthController(IAuthRepository repo)
+        public AuthController(IMediator mediator)
         {   
-            _repo = repo;
+            _mediator = mediator;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetByEmailAsync(string email) 
-            => new ObjectResult(await _repo.GetUserByEmailAsync(email));
+        [HttpPost("register")]
+        public async Task<IActionResult> RegisterAsync([FromBody] Service.Auth.Commands.Register.Command command) 
+            => new ObjectResult(await _mediator.Send(command));
+
+        [HttpPost("login")]
+        public async Task<IActionResult> LoginAsync([FromBody] Service.Auth.Commands.Login.Command command)
+            => new ObjectResult(await _mediator.Send(command));
     }
 }

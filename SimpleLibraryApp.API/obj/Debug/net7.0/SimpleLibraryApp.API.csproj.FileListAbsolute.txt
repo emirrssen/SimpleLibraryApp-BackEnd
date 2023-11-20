@@ -39,3 +39,11 @@
 /home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/bin/Debug/net7.0/SimpleLibraryApp.Core.pdb
 /home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/bin/Debug/net7.0/SimpleLibraryApp.Repository.pdb
 /home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/bin/Debug/net7.0/SimpleLibraryApp.Service.pdb
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/bin/Debug/net7.0/AutoMapper.dll
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/bin/Debug/net7.0/FluentValidation.dll
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/bin/Debug/net7.0/FluentValidation.AspNetCore.dll
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/bin/Debug/net7.0/FluentValidation.DependencyInjectionExtensions.dll
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/bin/Debug/net7.0/MediatR.dll
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/bin/Debug/net7.0/MediatR.Contracts.dll
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/bin/Debug/net7.0/MediatR.Extensions.Microsoft.DependencyInjection.dll

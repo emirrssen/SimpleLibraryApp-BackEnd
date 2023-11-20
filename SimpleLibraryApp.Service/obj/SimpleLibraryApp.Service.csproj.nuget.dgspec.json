@@ -4,14 +4,14 @@
     "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Service/SimpleLibraryApp.Service.csproj": {}
   },
   "projects": {
-    "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Service/SimpleLibraryApp.Service.csproj": {
+    "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Core/SimpleLibraryApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Service/SimpleLibraryApp.Service.csproj",
-        "projectName": "SimpleLibraryApp.Service",
-        "projectPath": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Service/SimpleLibraryApp.Service.csproj",
+        "projectUniqueName": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Core/SimpleLibraryApp.Core.csproj",
+        "projectName": "SimpleLibraryApp.Core",
+        "projectPath": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Core/SimpleLibraryApp.Core.csproj",
         "packagesPath": "/home/emirrssen/.nuget/packages/",
-        "outputPath": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Service/obj/",
+        "outputPath": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/emirrssen/.nuget/NuGet/NuGet.Config"
@@ -37,6 +37,151 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/emirrssen/.dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Repository/SimpleLibraryApp.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Repository/SimpleLibraryApp.Repository.csproj",
+        "projectName": "SimpleLibraryApp.Repository",
+        "projectPath": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Repository/SimpleLibraryApp.Repository.csproj",
+        "packagesPath": "/home/emirrssen/.nuget/packages/",
+        "outputPath": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Repository/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/emirrssen/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Core/SimpleLibraryApp.Core.csproj": {
+                "projectPath": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Core/SimpleLibraryApp.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.21, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[7.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/emirrssen/.dotnet/sdk/7.0.403/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Service/SimpleLibraryApp.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Service/SimpleLibraryApp.Service.csproj",
+        "projectName": "SimpleLibraryApp.Service",
+        "projectPath": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Service/SimpleLibraryApp.Service.csproj",
+        "packagesPath": "/home/emirrssen/.nuget/packages/",
+        "outputPath": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Service/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/emirrssen/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Core/SimpleLibraryApp.Core.csproj": {
+                "projectPath": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Core/SimpleLibraryApp.Core.csproj"
+              },
+              "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Repository/SimpleLibraryApp.Repository.csproj": {
+                "projectPath": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Repository/SimpleLibraryApp.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.8.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

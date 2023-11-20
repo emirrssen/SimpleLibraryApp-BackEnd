@@ -9,3 +9,9 @@
 /home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Service/obj/Debug/net7.0/refint/SimpleLibraryApp.Service.dll
 /home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Service/obj/Debug/net7.0/SimpleLibraryApp.Service.pdb
 /home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Service/obj/Debug/net7.0/ref/SimpleLibraryApp.Service.dll
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Service/bin/Debug/net7.0/SimpleLibraryApp.Core.dll
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Service/bin/Debug/net7.0/SimpleLibraryApp.Repository.dll
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Service/bin/Debug/net7.0/SimpleLibraryApp.Core.pdb
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Service/bin/Debug/net7.0/SimpleLibraryApp.Repository.pdb
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Service/obj/Debug/net7.0/SimpleLibraryApp.Service.csproj.AssemblyReference.cache
+/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.Service/obj/Debug/net7.0/SimpleLibraryApp.Service.csproj.CopyComplete
