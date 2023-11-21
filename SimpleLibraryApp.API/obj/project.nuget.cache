@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZV7JD3cdNvLaF98zmpZ+HMnQ+xDucT8nUVXiUzrjmm+ju3whob/4l1IDgxQ6nWVcAEHQeo/tOCyhFaiu/WKQCg==",
+  "dgSpecHash": "CbFYZbThrk7U7xB3FP6Bej/Nun073PVeefOeHNNEDOOA+GUZ/licQotcoVCFvpZPmjAsxSwGvmUABOb/baPApg==",
   "success": true,
   "projectFilePath": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/SimpleLibraryApp.API.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,7 @@
     "/home/emirrssen/.nuget/packages/dapper/2.1.21/dapper.2.1.21.nupkg.sha512",
     "/home/emirrssen/.nuget/packages/fluentvalidation/11.8.0/fluentvalidation.11.8.0.nupkg.sha512",
     "/home/emirrssen/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
-    "/home/emirrssen/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.1/fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
+    "/home/emirrssen/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.8.0/fluentvalidation.dependencyinjectionextensions.11.8.0.nupkg.sha512",
     "/home/emirrssen/.nuget/packages/mediatr/11.0.0/mediatr.11.0.0.nupkg.sha512",
     "/home/emirrssen/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
     "/home/emirrssen/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.1.0/mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",

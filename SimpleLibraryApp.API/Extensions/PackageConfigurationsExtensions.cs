@@ -1,9 +1,11 @@
 ﻿using System.Data;
 using System.Reflection;
+using FluentValidation;
 using FluentValidation.AspNetCore;
 using MediatR;
 using Npgsql;
 using SimpleLibraryApp.Service;
+using SimpleLibraryApp.Service.Auth.Commands.Login;
 
 namespace SimpleLibraryApp.API;
 
@@ -16,11 +18,12 @@ public static class PackageConfigurationsExtensions
     }
 
     public static void ConfigureMediatR(this IServiceCollection services) {
-        services.AddMediatR(Assembly.GetAssembly(typeof(AssemblyProvider)));
+        services.AddMediatR(typeof(AssemblyProvider).Assembly);
     }
 
     public static void ConfigureFluentValidation(this IServiceCollection services) {
-        services.AddControllers().AddFluentValidation(x => x.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly()));
+        services.AddControllers(option => option.Filters.Add(new ValidationResponseFilter()))
+            .AddFluentValidation(x => x.RegisterValidatorsFromAssembly(typeof(AssemblyProvider).Assembly));
     }
 
     public static void ConfigureAutoMapper(this IServiceCollection services) {

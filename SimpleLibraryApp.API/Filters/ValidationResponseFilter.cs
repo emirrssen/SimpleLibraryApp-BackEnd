@@ -11,8 +11,8 @@ public class ValidationResponseFilter: ActionFilterAttribute
         if (!context.ModelState.IsValid)
         {
             var errors = context.ModelState.Values.SelectMany(x => x.Errors).Select(x => x.ErrorMessage).ToList();
-            var result = ResponseFactory.FailResponse(string.Join(", ", errors));
-            context.Result = new BadRequestObjectResult(result);
+            var result = ResponseFactory.FailResponse(string.Join("\n", errors));
+            context.Result = new ObjectResult(result);
         }
     }
 }
