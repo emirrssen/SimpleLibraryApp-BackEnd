@@ -1,3 +1,4 @@
+using System.Data;
 using Microsoft.AspNetCore.Mvc;
 using SimpleLibraryApp.API;
 
@@ -27,6 +28,14 @@ builder.Services.Configure<ApiBehaviorOptions>(option => {
 });
 
 var app = builder.Build();
+
+// For Seed
+// using (var scope = app.Services.CreateScope())
+// {
+//     var dbConnection = scope.ServiceProvider.GetRequiredService<IDbConnection>();
+//     dbConnection.Open();
+//     await Seed.Create(dbConnection);
+// }
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
