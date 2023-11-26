@@ -2,7 +2,7 @@
 using Dapper;
 using SimpleLibraryApp.Core.Aggregates.AuthAggregates;
 
-namespace SimpleLibraryApp.Repository;
+namespace SimpleLibraryApp.Repository.Dapper;
 
 public class AuthRepository : IAuthRepository
 {
@@ -14,6 +14,18 @@ public class AuthRepository : IAuthRepository
         _connection = connection;
         _transaction = transaction;
     }
+
+    public async Task<User> GetById(int id)
+    {
+        var parameters = new DynamicParameters();
+        parameters.Add("@id", id, DbType.Int32);
+
+        var sql = $@"SELECT * FROM ""public"".""Users_GetById""(@id)";
+        var result = await _connection.QuerySingleOrDefaultAsync<User>(sql, parameters);
+
+        return result;
+    }
+
     public async Task<User> GetUserByEmailAsync(string email)
     {
         var parameters = new DynamicParameters();

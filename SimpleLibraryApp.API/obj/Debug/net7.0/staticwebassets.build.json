@@ -1,11 +1,37 @@
 {
   "Version": 1,
-  "Hash": "8d9+IPwF30Hv791iBqc3IFMZxg8w1BeROCYJ7+k/Da8=",
+  "Hash": "qtkzxQjnlU4ppXFWI+stuViDA4M6AFZg+QwE4Z1MG8U=",
   "Source": "SimpleLibraryApp.API",
   "BasePath": "_content/SimpleLibraryApp.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "SimpleLibraryApp.API/wwwroot",
+      "Source": "SimpleLibraryApp.API",
+      "ContentRoot": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/wwwroot/",
+      "BasePath": "_content/SimpleLibraryApp.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/wwwroot/UserImages/deneme.jpg",
+      "SourceId": "SimpleLibraryApp.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/wwwroot/",
+      "BasePath": "_content/SimpleLibraryApp.API",
+      "RelativePath": "UserImages/deneme.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/UserImages/deneme.jpg"
+    }
+  ]
 }
