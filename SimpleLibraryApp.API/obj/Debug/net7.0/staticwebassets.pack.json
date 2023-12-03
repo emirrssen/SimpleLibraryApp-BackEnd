@@ -1,8 +1,56 @@
 {
   "Files": [
     {
+      "Id": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/wwwroot/UserImages/buyuk_umutlar_cover.png",
+      "PackagePath": "staticwebassets/UserImages/buyuk_umutlar_cover.png"
+    },
+    {
       "Id": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/wwwroot/UserImages/deneme.jpg",
       "PackagePath": "staticwebassets/UserImages/deneme.jpg"
+    },
+    {
+      "Id": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/wwwroot/UserImages/don_kisot_cover.jpg",
+      "PackagePath": "staticwebassets/UserImages/don_kisot_cover.jpg"
+    },
+    {
+      "Id": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/wwwroot/UserImages/gulliverin_gezileri_cover.jpg",
+      "PackagePath": "staticwebassets/UserImages/gulliverin_gezileri_cover.jpg"
+    },
+    {
+      "Id": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/wwwroot/UserImages/jane_eyre_cover.jpg",
+      "PackagePath": "staticwebassets/UserImages/jane_eyre_cover.jpg"
+    },
+    {
+      "Id": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/wwwroot/UserImages/karamazov_kardesler_cover.jpg",
+      "PackagePath": "staticwebassets/UserImages/karamazov_kardesler_cover.jpg"
+    },
+    {
+      "Id": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/wwwroot/UserImages/kirmizi_ve_siyah_cover.jpg",
+      "PackagePath": "staticwebassets/UserImages/kirmizi_ve_siyah_cover.jpg"
+    },
+    {
+      "Id": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/wwwroot/UserImages/madame_bovary_cover.jpeg",
+      "PackagePath": "staticwebassets/UserImages/madame_bovary_cover.jpeg"
+    },
+    {
+      "Id": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/wwwroot/UserImages/romeo_ve_juliet_cover.jpg",
+      "PackagePath": "staticwebassets/UserImages/romeo_ve_juliet_cover.jpg"
+    },
+    {
+      "Id": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/wwwroot/UserImages/sefiller_1_cover.jpg",
+      "PackagePath": "staticwebassets/UserImages/sefiller_1_cover.jpg"
+    },
+    {
+      "Id": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/wwwroot/UserImages/sefiller_2_cover.jpg",
+      "PackagePath": "staticwebassets/UserImages/sefiller_2_cover.jpg"
+    },
+    {
+      "Id": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/wwwroot/UserImages/suc_ve_ceza_cover.jpg",
+      "PackagePath": "staticwebassets/UserImages/suc_ve_ceza_cover.jpg"
+    },
+    {
+      "Id": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/wwwroot/UserImages/yeraltindan_notlar_cover.png",
+      "PackagePath": "staticwebassets/UserImages/yeraltindan_notlar_cover.png"
     },
     {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.SimpleLibraryApp.API.Microsoft.AspNetCore.StaticWebAssets.props",
