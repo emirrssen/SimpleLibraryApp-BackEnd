@@ -20,5 +20,9 @@ public class GenericDataResponse<T> : BaseResponse
         Data = data;
     }
 
-    public T Data { get; set; }
+    public GenericDataResponse(bool isSuccess, string message): base(isSuccess, message)
+    {
+    }
+
+    public T? Data { get; set; }
 }

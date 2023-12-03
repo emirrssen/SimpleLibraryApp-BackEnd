@@ -4,6 +4,7 @@ using SimpleLibraryApp.Core.Aggregates.ImageAggregates;
 using SimpleLibraryApp.Core.Aggregates.AuthAggregates;
 using SimpleLibraryApp.Core.Response;
 using SimpleLibraryApp.Core.Aggregates.BorrowOperationAggregates;
+using SimpleLibraryApp.Core.Helpers;
 
 namespace SimpleLibraryApp.Service.Auth.Queries.LoadPersonelInfo;
 
@@ -36,7 +37,7 @@ public class Handler : IRequestHandler<Query, GenericDataResponse<Dto>>
 
         if (imageName is not null)
         {
-            dtoToReturn.ProfileImageUrl = "http://localhost:5158/UserImages/" + imageName.ImageName;
+            dtoToReturn.ProfileImageUrl = ImageHelper.CreateImageUrl(imageName.ImageName);
         }
 
         var bookBorrowDetails = await _borrowOperationsRepository.GetDetailsForUserByUserIdAsync(request.UserId);

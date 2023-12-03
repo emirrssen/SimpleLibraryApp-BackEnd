@@ -6,7 +6,7 @@ namespace SimpleLibraryApp.Repository.Dapper;
 
 public class ImageRepository : IImageRepository
 {
-        private readonly IDbConnection _connection;
+    private readonly IDbConnection _connection;
     private readonly IDbTransaction _transaction;
 
     public ImageRepository(IDbConnection connection, IDbTransaction transaction)

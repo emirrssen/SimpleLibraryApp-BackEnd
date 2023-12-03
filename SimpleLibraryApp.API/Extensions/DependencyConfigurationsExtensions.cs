@@ -3,6 +3,7 @@ using SimpleLibraryApp.Core.Aggregates.AuthAggregates;
 using SimpleLibraryApp.Repository.Dapper;
 using SimpleLibraryApp.Core.Aggregates.BorrowOperationAggregates;
 using SimpleLibraryApp.Repository;
+using SimpleLibraryApp.Core.Aggregates.FavouriteBookAggregates;
 
 namespace SimpleLibraryApp.API;
 
@@ -12,5 +13,6 @@ public static class DependencyConfigurationsExtensions
         services.AddScoped<IAuthRepository, AuthRepository>();
         services.AddScoped<IImageRepository, ImageRepository>();
         services.AddScoped<IBorrowOperationRepository, BorrowOperationRepository>();
+        services.AddScoped<IFavouriteBookRepository, FavouriteBookRepository>();
     }
 }
