@@ -1,6 +1,6 @@
 ﻿using System.Data;
 using Dapper;
-using SimpleLibraryApp.Core;
+using SimpleLibraryApp.Core.Aggregates.ImageAggregates;
 
 namespace SimpleLibraryApp.Repository.Dapper;
 

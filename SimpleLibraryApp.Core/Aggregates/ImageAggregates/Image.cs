@@ -1,4 +1,4 @@
-﻿namespace SimpleLibraryApp.Core;
+﻿namespace SimpleLibraryApp.Core.Aggregates.ImageAggregates;
 
 public class Image
 {
