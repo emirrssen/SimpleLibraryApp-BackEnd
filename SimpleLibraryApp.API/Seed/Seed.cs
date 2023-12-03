@@ -20,7 +20,7 @@ public class Seed
 
             foreach (var sql in sqlQueries)
             {
-                await connection.ExecuteScalarAsync<int>(sql);
+                await connection.QuerySingleOrDefaultAsync<int>(sql);
             }
         }
     }

@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "/home/emirrssen/Documents/Projects/Financial Stability Portfolio/Back-End/SimpleLibraryAppBackEnd/SimpleLibraryApp.API/wwwroot/UserImages/deneme.jpg",
+      "PackagePath": "staticwebassets/UserImages/deneme.jpg"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.SimpleLibraryApp.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.SimpleLibraryApp.API.props",
+      "PackagePath": "build\\SimpleLibraryApp.API.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.SimpleLibraryApp.API.props",
+      "PackagePath": "buildMultiTargeting\\SimpleLibraryApp.API.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.SimpleLibraryApp.API.props",
+      "PackagePath": "buildTransitive\\SimpleLibraryApp.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
