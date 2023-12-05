@@ -3,4 +3,5 @@
 public interface IBorrowOperationRepository
 {
     Task<List<BorrowOperationDetailsForUser>> GetDetailsForUserByUserIdAsync(int userId);
+    Task<List<BorrowOperationDetailsForReadedBooksByUser>> GetReadedBooksByUserId(int userId);
 }

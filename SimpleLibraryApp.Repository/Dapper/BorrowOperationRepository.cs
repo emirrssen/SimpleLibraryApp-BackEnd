@@ -1,5 +1,6 @@
 ﻿using System.Data;
 using Dapper;
+using SimpleLibraryApp.Core;
 using SimpleLibraryApp.Core.Aggregates.BorrowOperationAggregates;
 
 namespace SimpleLibraryApp.Repository;
@@ -22,6 +23,17 @@ public class BorrowOperationRepository : IBorrowOperationRepository
 
         var sql = $@"SELECT * FROM ""public"".""BorrowOperations_GetDetailsForUserByUserId""(@user_id)";
         var result = await _connection.QueryAsync<BorrowOperationDetailsForUser>(sql, parameters);
+
+        return result.ToList();
+    }
+
+    public async Task<List<BorrowOperationDetailsForReadedBooksByUser>> GetReadedBooksByUserId(int userId)
+    {
+        var parameters = new DynamicParameters();
+        parameters.Add("@user_id", userId, DbType.Int32);
+
+        var sql = $@"SELECT * FROM ""public"".""BorrowOperations_GetReadedBooksByUserId""(@user_id)";
+        var result = await _connection.QueryAsync<BorrowOperationDetailsForReadedBooksByUser>(sql, parameters);
 
         return result.ToList();
     }
