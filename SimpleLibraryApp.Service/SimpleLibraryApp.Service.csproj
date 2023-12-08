@@ -14,12 +14,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Auth/Queries/" />
+    <ProjectReference Include="..\SimpleLibraryApp.Core\SimpleLibraryApp.Core.csproj" />
+    <ProjectReference Include="..\SimpleLibraryApp.Repository\SimpleLibraryApp.Repository.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SimpleLibraryApp.Core\SimpleLibraryApp.Core.csproj" />
-    <ProjectReference Include="..\SimpleLibraryApp.Repository\SimpleLibraryApp.Repository.csproj" />
+    <Folder Include="BorrowOperation/Commands/" />
+    <Folder Include="FavouriteBook/Commands/" />
   </ItemGroup>
 
 </Project>
