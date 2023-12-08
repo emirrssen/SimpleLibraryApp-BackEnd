@@ -18,4 +18,8 @@ public class BorrowOperationController
     [HttpGet("get-readed-books-by-user-id")]
     public async Task<IActionResult> GetReadedBooksByUserIdAsync([FromQuery] Service.BorrowOperation.Queries.GetReadedBooksByUserId.Query query)
         => new ObjectResult(await _mediator.Send(query));
+
+    [HttpGet("get-favourite-categories-by-user-id")]
+    public async Task<IActionResult> GetFavouriteCategoriesByUserIdAsync([FromQuery] Service.BorrowOperation.Queries.GetFavouriteCategoriesByUserId.Query query)
+        => new ObjectResult(await _mediator.Send(query));
 }
