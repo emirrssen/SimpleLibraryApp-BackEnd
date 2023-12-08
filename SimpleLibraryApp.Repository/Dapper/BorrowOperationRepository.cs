@@ -37,4 +37,15 @@ public class BorrowOperationRepository : IBorrowOperationRepository
 
         return result.ToList();
     }
+
+    public async Task<List<BorrowOperationDetailsForFavouriteCategoriesByUser>> GetReadedBooksWithCategoryByUserId(int userId)
+    {
+        var parameters = new DynamicParameters();
+        parameters.Add("@user_id", userId, DbType.Int32);
+
+        var sql = $@"SELECT * FROM ""public"".""BorrowOperations_GetReadedBookDetailsByUserId""(@user_id)";
+        var result = await _connection.QueryAsync<BorrowOperationDetailsForFavouriteCategoriesByUser>(sql, parameters);
+
+        return result.ToList();
+    }
 }
