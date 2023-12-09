@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Book/Commands/" />
     <Folder Include="BorrowOperation/Commands/" />
     <Folder Include="FavouriteBook/Commands/" />
   </ItemGroup>
