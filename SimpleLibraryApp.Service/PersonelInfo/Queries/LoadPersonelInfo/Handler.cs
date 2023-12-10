@@ -6,7 +6,7 @@ using SimpleLibraryApp.Core.Response;
 using SimpleLibraryApp.Core.Aggregates.BorrowOperationAggregates;
 using SimpleLibraryApp.Core.Helpers;
 
-namespace SimpleLibraryApp.Service.Auth.Queries.LoadPersonelInfo;
+namespace SimpleLibraryApp.Service.PersonelInfo.Queries.LoadPersonelInfo;
 
 public class Handler : IRequestHandler<Query, GenericDataResponse<Dto>>
 {

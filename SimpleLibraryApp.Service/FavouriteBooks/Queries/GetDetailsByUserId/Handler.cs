@@ -4,7 +4,7 @@ using SimpleLibraryApp.Core.Aggregates.FavouriteBookAggregates;
 using SimpleLibraryApp.Core.Helpers;
 using SimpleLibraryApp.Core.Response;
 
-namespace SimpleLibraryApp.Service.FavouriteBook.Queries.GetDetailsByUserId;
+namespace SimpleLibraryApp.Service.FavouriteBooks.Queries.GetDetailsByUserId;
 
 public class Handler : IRequestHandler<Query, GenericDataResponse<List<Dto>>>
 {

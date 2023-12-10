@@ -1,4 +1,4 @@
-﻿namespace SimpleLibraryApp.Service.CarouselItem.Queries.GetAllWithDetails;
+﻿namespace SimpleLibraryApp.Service.Carousel.Queries.GetAllWithDetails;
 
 public class Dto
 {

@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using SimpleLibraryApp.Core.Response;
 
-namespace SimpleLibraryApp.Service.Auth.Queries.LoadPersonelInfo;
+namespace SimpleLibraryApp.Service.PersonelInfo.Queries.LoadPersonelInfo;
 
 public class Query : IRequest<GenericDataResponse<Dto>>
 {

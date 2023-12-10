@@ -1,4 +1,4 @@
-﻿namespace SimpleLibraryApp.Service.Auth.Queries.LoadPersonelInfo;
+﻿namespace SimpleLibraryApp.Service.PersonelInfo.Queries.LoadPersonelInfo;
 
 public class Dto
 {

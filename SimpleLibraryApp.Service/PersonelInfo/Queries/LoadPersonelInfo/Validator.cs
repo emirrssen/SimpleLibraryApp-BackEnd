@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace SimpleLibraryApp.Service.BorrowOperation.Queries.GetFavouriteCategoriesByUserId;
+namespace SimpleLibraryApp.Service.PersonelInfo.Queries.LoadPersonelInfo;
 
 public class Validator : AbstractValidator<Query>
 {

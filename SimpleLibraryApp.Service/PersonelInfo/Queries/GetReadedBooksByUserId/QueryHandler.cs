@@ -4,7 +4,7 @@ using SimpleLibraryApp.Core.Aggregates.BorrowOperationAggregates;
 using SimpleLibraryApp.Core.Helpers;
 using SimpleLibraryApp.Core.Response;
 
-namespace SimpleLibraryApp.Service.BorrowOperation.Queries.GetReadedBooksByUserId;
+namespace SimpleLibraryApp.Service.PersonelInfo.Queries.GetReadedBooksByUserId;
 
 public class QueryHandler : IRequestHandler<Query, GenericDataResponse<List<Dto>>>
 {

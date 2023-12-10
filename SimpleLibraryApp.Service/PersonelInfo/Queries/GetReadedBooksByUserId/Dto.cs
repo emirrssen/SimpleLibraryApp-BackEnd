@@ -1,4 +1,4 @@
-﻿namespace SimpleLibraryApp.Service.FavouriteBook.Queries.GetDetailsByUserId;
+﻿namespace SimpleLibraryApp.Service.PersonelInfo.Queries.GetReadedBooksByUserId;
 
 public class Dto
 {

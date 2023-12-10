@@ -1,8 +1,7 @@
-﻿using System.Reflection;
-using MediatR;
+﻿using MediatR;
 using SimpleLibraryApp.Core.Response;
 
-namespace SimpleLibraryApp.Service.BorrowOperation.Queries.GetReadedBooksByUserId;
+namespace SimpleLibraryApp.Service.FavouriteBooks.Queries.GetDetailsByUserId;
 
 public class Query : IRequest<GenericDataResponse<List<Dto>>>
 {

@@ -15,6 +15,6 @@ public class CarouselItemController
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetAllWithDetailsAsync([FromQuery] Service.CarouselItem.Queries.GetAllWithDetails.Query query)
+    public async Task<IActionResult> GetAllWithDetailsAsync([FromQuery] Service.Carousel.Queries.GetAllWithDetails.Query query)
         => new ObjectResult(await _mediator.Send(query));
 }

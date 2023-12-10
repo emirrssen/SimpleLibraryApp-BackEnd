@@ -4,7 +4,7 @@ using SimpleLibraryApp.Core.Aggregates.CarouselItemAggregates;
 using SimpleLibraryApp.Core.Helpers;
 using SimpleLibraryApp.Core.Response;
 
-namespace SimpleLibraryApp.Service.CarouselItem.Queries.GetAllWithDetails;
+namespace SimpleLibraryApp.Service.Carousel.Queries.GetAllWithDetails;
 
 public class Handler : IRequestHandler<Query, GenericDataResponse<List<Dto>>>
 {

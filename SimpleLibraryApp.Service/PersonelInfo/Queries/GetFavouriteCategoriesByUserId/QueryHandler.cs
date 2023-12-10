@@ -2,7 +2,7 @@
 using SimpleLibraryApp.Core.Aggregates.BorrowOperationAggregates;
 using SimpleLibraryApp.Core.Response;
 
-namespace SimpleLibraryApp.Service.BorrowOperation.Queries.GetFavouriteCategoriesByUserId;
+namespace SimpleLibraryApp.Service.PersonelInfo.Queries.GetFavouriteCategoriesByUserId;
 
 public class QueryHandler : IRequestHandler<Query, GenericDataResponse<List<string>>>
 {
