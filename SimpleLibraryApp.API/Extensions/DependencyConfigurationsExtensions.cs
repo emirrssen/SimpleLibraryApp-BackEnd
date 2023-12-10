@@ -6,6 +6,8 @@ using SimpleLibraryApp.Repository;
 using SimpleLibraryApp.Core.Aggregates.FavouriteBookAggregates;
 using SimpleLibraryApp.Core.Aggregates.CarouselItemAggregates;
 using SimpleLibraryApp.Core.Aggregates.BookAggregates;
+using SimpleLibraryApp.Core.Aggregates.AuthorAggregates;
+using SimpleLibraryApp.Core.Aggregates.CategoryAggregates;
 
 namespace SimpleLibraryApp.API;
 
@@ -18,5 +20,7 @@ public static class DependencyConfigurationsExtensions
         services.AddScoped<IFavouriteBookRepository, FavouriteBookRepository>();
         services.AddScoped<ICarouselItemRepository, CarouselItemRepository>();
         services.AddScoped<IBookRepository, BookRepository>();
+        services.AddScoped<IAuthorRepository, AuthorRepository>();
+        services.AddScoped<ICategoryRepository, CategoryRepository>();
     }
 }

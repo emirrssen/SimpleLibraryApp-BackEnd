@@ -25,4 +25,12 @@ public class BookRepository : IBookRepository
 
         return result.ToList();
     }
+
+    public async Task<List<ReleaseYearForFilter>> GetReleaseYearsForFilterAsync()
+    {
+        var sql = $@"SELECT * FROM ""public"".""Books_GetReleaseYears""()";
+        var result = await _connection.QueryAsync<ReleaseYearForFilter>(sql);
+
+        return result.ToList();
+    }
 }
