@@ -26,9 +26,9 @@ public class Handler : IRequestHandler<Query, GenericDataResponse<Dto>>
         var releaseYearFilters = await _bookRepository.GetReleaseYearsForFilterAsync();
 
         var resultToReturn = new Dto {
-            AuthorFilter = authorFilters.Select(x => new AuthorFilter { Id = x.Id, Name = x.Name }).ToList(),
-            CategoryFilter = categoryFilters.Select(x => new CategoryFilter { Id = x.Id, Name = x.Name }).ToList(),
-            ReleaseYearFilter = releaseYearFilters.Select(x => new ReleaseYearFilter { Id = x.Id, ReleaseYear = x.ReleaseYear }).ToList()
+            AuthorFilter = authorFilters.Select(x => new AuthorFilter { Id = x.Id, Name = x.Name, IsSelected = false }).ToList(),
+            CategoryFilter = categoryFilters.Select(x => new CategoryFilter { Id = x.Id, Name = x.Name, IsSelected = false }).ToList(),
+            ReleaseYearFilter = releaseYearFilters.Select(x => new ReleaseYearFilter { Id = x.Id, ReleaseYear = x.ReleaseYear, IsSelected = false }).ToList()
         };
 
         return ResponseFactory.SuccessResponse<Dto>(resultToReturn, "Filtreler başarıyla listelendi");

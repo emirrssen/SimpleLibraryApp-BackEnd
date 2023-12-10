@@ -10,14 +10,17 @@ public class Dto
 public class CategoryFilter {
     public int Id { get; set; }
     public string Name { get; set; }
+    public bool IsSelected { get; set; }
 }
 
 public class AuthorFilter {
     public int Id { get; set; }
     public string Name { get; set; }
+    public bool IsSelected { get; set; }
 }
 
 public class ReleaseYearFilter {
     public int Id { get; set; }
     public string ReleaseYear { get; set; }
+    public bool IsSelected { get; set; }
 }
