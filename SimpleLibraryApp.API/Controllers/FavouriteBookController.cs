@@ -15,6 +15,6 @@ public class FavouriteBookController
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetDetailsByUserIdAsync([FromQuery] Service.FavouriteBook.Queries.GetDetailsByUserId.Query query)
+    public async Task<IActionResult> GetDetailsByUserIdAsync([FromQuery] Service.FavouriteBooks.Queries.GetDetailsByUserId.Query query)
         => new ObjectResult(await _mediator.Send(query));
 }
