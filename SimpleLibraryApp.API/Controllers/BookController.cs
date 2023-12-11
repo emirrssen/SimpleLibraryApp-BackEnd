@@ -21,4 +21,8 @@ public class BookController
     [HttpGet("filters")]
     public async Task<IActionResult> GetFiltersAsync([FromQuery] Service.Book.Queries.GetFilters.Query query)
         => new ObjectResult(await _mediator.Send(query));
+
+    [HttpPost("get-by-filters")]
+    public async Task<IActionResult> GetByFiltersAsync([FromBody] Service.Book.Queries.GetDetailsByFilters.Query query)
+        => new ObjectResult(await _mediator.Send(query));
 }
