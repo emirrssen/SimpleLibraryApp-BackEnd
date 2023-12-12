@@ -15,6 +15,17 @@ public class BookRepository : IBookRepository
         _transaction = transaction;
     }
 
+    public async Task<List<BookDetailForRecommendation>> GetBookDetailByAuthorId(int authorId)
+    {
+        var parameters = new DynamicParameters();
+        parameters.Add("@author_id", authorId, DbType.Int32);
+
+        var sql = $@"SELECT * FROM  ""public"".""Books_GetDetailByAuthorId""(@author_id)";
+        var result = await _connection.QueryAsync<BookDetailForRecommendation>(sql, parameters);
+
+        return result.ToList();
+    }
+
     public async Task<BookDetails> GetBookDetailsByIdAsync(int bookId)
     {
         var parameters = new DynamicParameters();

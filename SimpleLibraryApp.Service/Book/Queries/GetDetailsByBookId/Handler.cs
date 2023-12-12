@@ -25,6 +25,7 @@ public class Handler : IRequestHandler<Query, GenericDataResponse<Dto>>
 
         var dataToReturn = new Dto {
             Id = bookDetails.Id,
+            AuthorId = bookDetails.AuthorId,
             Author = bookDetails.Author,
             BookImage = ImageHelper.CreateImageUrl(bookDetails.BookImage),
             BookName = bookDetails.BookName,
