@@ -26,6 +26,7 @@ public class QueryHandler : IRequestHandler<Query, GenericDataResponse<List<Dto>
 
         return ResponseFactory.SuccessResponse<List<Dto>>(readedBooks.Select(x => new Dto {
             Id = x.Id,
+            BookId = x.BookId,
             BookName = x.BookName,
             BookImage = ImageHelper.CreateImageUrl(x.BookImage)
         }).ToList(), "Kayıtlar başarıyla listelendi");

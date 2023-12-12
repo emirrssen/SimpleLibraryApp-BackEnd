@@ -27,6 +27,7 @@ public class Handler : IRequestHandler<Query, GenericDataResponse<List<Dto>>>
 
         var resultToReturn = result.Select(x => new Dto {
             Id = x.Id,
+            BookId = x.BookId,
             BookName = x.BookName,
             BookImage = ImageHelper.CreateImageUrl(x.BookImage)
         }).ToList();

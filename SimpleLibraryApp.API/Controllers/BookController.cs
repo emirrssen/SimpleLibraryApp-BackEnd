@@ -29,4 +29,8 @@ public class BookController
     [HttpGet("details")]
     public async Task<IActionResult> GetDetailsByIdAsync([FromQuery] Service.Book.Queries.GetDetailsByBookId.Query query)
         => new ObjectResult(await _mediator.Send(query));
+
+    [HttpGet("recommendations")]
+    public async Task<IActionResult> GetRecommendationsByAuthorIdAsync([FromQuery] Service.Book.Queries.GetDetailsForRecommendationsByAuthorId.Query query)
+        => new ObjectResult(await _mediator.Send(query));
 }
