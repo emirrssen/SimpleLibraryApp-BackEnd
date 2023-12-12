@@ -15,6 +15,17 @@ public class FavouriteBookRepository : IFavouriteBookRepository
         _transaction = transaction;
     }
 
+    public async Task<int> DeleteFavouriteBookByIdAsync(int idToDelete)
+    {
+        var parameters = new DynamicParameters();
+        parameters.Add("@id", idToDelete, DbType.Int32);
+
+        var sql = $@"SELECT * FROM ""public"".""FavouriteBooks_DeleteById""(@id)";
+        var result = await _connection.QueryFirstOrDefaultAsync<int>(sql, parameters, _transaction);
+
+        return result;
+    }
+
     public async Task<List<FavouriteBookDetailsForUser>> GetDetailsByUserIdAsync(int userId)
     {
         var parameters = new DynamicParameters();
@@ -24,5 +35,17 @@ public class FavouriteBookRepository : IFavouriteBookRepository
         var result = await _connection.QueryAsync<FavouriteBookDetailsForUser>(sql, parameters);
 
         return result.ToList();
+    }
+
+    public async Task<int> InsertFavouriteBookAsync(int userId, int bookId)
+    {
+        var parameters = new DynamicParameters();
+        parameters.Add("@user_id", userId, DbType.Int32);
+        parameters.Add("@book_id", bookId, DbType.Int32);
+
+        var sql = $@"SELECT * FROM ""public"".""FavouriteBooks_Insert""(@user_id, @book_id)";
+        var result = await _connection.QueryFirstOrDefaultAsync<int>(sql, parameters, _transaction);
+
+        return result;
     }
 }

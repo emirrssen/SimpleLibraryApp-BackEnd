@@ -5,4 +5,6 @@ public interface IBookRepository
     Task<List<BookDetailForSearch>> GetBookDetailsByNameAsync(string bookName);
     Task<List<ReleaseYearForFilter>> GetReleaseYearsForFilterAsync();
     Task<List<BookDetailForSearch>> GetBooksByFiltersAsync(int[]? categoryFilters, int[]? authorFilters, int[]? releaseYearFilters);
+    Task<BookDetails> GetBookDetailsByIdAsync(int bookId);
+    Task<List<BookDetailForRecommendation>> GetBookDetailByAuthorId(int authorId);
 }

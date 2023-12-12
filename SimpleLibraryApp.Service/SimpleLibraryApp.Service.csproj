@@ -21,8 +21,6 @@
   <ItemGroup>
     <Folder Include="Book/Commands/" />
     <Folder Include="Carousel/Commands/" />
-    <Folder Include="FavouriteBooks/" />
-    <Folder Include="FavouriteBooks/Commands/" />
     <Folder Include="FavouriteBooks/Queries/" />
     <Folder Include="PersonelInfo/Commands/" />
   </ItemGroup>
