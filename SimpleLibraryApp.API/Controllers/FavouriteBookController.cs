@@ -17,4 +17,12 @@ public class FavouriteBookController
     [HttpGet]
     public async Task<IActionResult> GetDetailsByUserIdAsync([FromQuery] Service.FavouriteBooks.Queries.GetDetailsByUserId.Query query)
         => new ObjectResult(await _mediator.Send(query));
+
+    [HttpPost]
+    public async Task<IActionResult> InsertFavouriteBookAsync([FromBody] Service.FavouriteBooks.Commands.Insert.Command command)
+        => new ObjectResult(await _mediator.Send(command));
+
+    [HttpDelete]
+    public async Task<IActionResult> DeleteFavouriteBookByIdAsync([FromQuery] Service.FavouriteBooks.Commands.Delete.Command command)
+        => new ObjectResult(await _mediator.Send(command));
 }
