@@ -26,6 +26,17 @@ public class AuthRepository : IAuthRepository
         return result;
     }
 
+    public async Task<UserDetailsForProfile> GetDetailsForProfileById(int id)
+    {
+        var parameters = new DynamicParameters();
+        parameters.Add("@id", id, DbType.Int32);
+
+        var sql = $@"SELECT * FROM ""public"".""Users_GetDetailsForProfileById""(@id)";
+        var result = await _connection.QuerySingleOrDefaultAsync<UserDetailsForProfile>(sql, parameters);
+
+        return result;
+    }
+
     public async Task<User> GetUserByEmailAsync(string email)
     {
         var parameters = new DynamicParameters();
