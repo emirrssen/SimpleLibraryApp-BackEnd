@@ -20,9 +20,9 @@
 
   <ItemGroup>
     <Folder Include="Book/Commands/" />
+    <Folder Include="BorrowOperations/Commands/" />
     <Folder Include="Carousel/Commands/" />
     <Folder Include="FavouriteBooks/Queries/" />
-    <Folder Include="PersonelInfo/Commands/" />
   </ItemGroup>
 
 </Project>

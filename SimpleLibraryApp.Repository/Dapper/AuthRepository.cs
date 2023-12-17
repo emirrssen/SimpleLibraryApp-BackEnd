@@ -15,13 +15,36 @@ public class AuthRepository : IAuthRepository
         _transaction = transaction;
     }
 
-    public async Task<User> GetById(int id)
+    public Task<int> ChangePasswordByUserIdAsync(int userId, string newPassword)
+    {
+        var parameters = new DynamicParameters();
+        parameters.Add("@user_id", userId, DbType.Int32);
+        parameters.Add("@new_password", newPassword, DbType.String);
+
+        var sql = $@"SELECT * FROM ""public"".""Users_UpdatePasswordByUserId""(@user_id, @new_password)";
+        var result = _connection.QuerySingleOrDefaultAsync<int>(sql, parameters, transaction: _transaction);
+
+        return result;
+    }
+
+    public async Task<User> GetByIdAsync(int id)
     {
         var parameters = new DynamicParameters();
         parameters.Add("@id", id, DbType.Int32);
 
         var sql = $@"SELECT * FROM ""public"".""Users_GetById""(@id)";
         var result = await _connection.QuerySingleOrDefaultAsync<User>(sql, parameters);
+
+        return result;
+    }
+
+    public async Task<UserDetailsForProfile> GetDetailsForProfileByIdAsync(int id)
+    {
+        var parameters = new DynamicParameters();
+        parameters.Add("@id", id, DbType.Int32);
+
+        var sql = $@"SELECT * FROM ""public"".""Users_GetDetailsForProfileById""(@id)";
+        var result = await _connection.QuerySingleOrDefaultAsync<UserDetailsForProfile>(sql, parameters);
 
         return result;
     }
