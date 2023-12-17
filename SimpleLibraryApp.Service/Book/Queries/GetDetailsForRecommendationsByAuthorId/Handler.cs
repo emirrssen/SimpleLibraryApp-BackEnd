@@ -16,7 +16,7 @@ public class Handler : IRequestHandler<Query, GenericDataResponse<List<Dto>>>
 
     public async Task<GenericDataResponse<List<Dto>>> Handle(Query request, CancellationToken cancellationToken)
     {
-        var books = await _bookRepository.GetBookDetailByAuthorId(request.AuthorId);
+        var books = await _bookRepository.GetBookDetailByAuthorIdAsync(request.AuthorId);
 
         if (!books.Any())
         {

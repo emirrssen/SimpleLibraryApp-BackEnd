@@ -15,7 +15,7 @@ public class QueryHandler : IRequestHandler<Query, GenericDataResponse<List<stri
 
     public async Task<GenericDataResponse<List<string>>> Handle(Query request, CancellationToken cancellationToken)
     {
-        var readedBooks = await _borrowOperationRepository.GetReadedBooksWithCategoryByUserId(request.UserId);
+        var readedBooks = await _borrowOperationRepository.GetReadedBooksWithCategoryByUserIdAsync(request.UserId);
         if (!readedBooks.Any())
         {   
             return ResponseFactory.FailResponse<List<string>>("Okunmuş kitap bulunamadı");
