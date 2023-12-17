@@ -7,4 +7,5 @@ public interface IAuthRepository
     Task<int> InsertUserRoleAssignmentAsync(UserRoleAssignment userRoleAssignment);
     Task<User> GetById(int id);
     Task<UserDetailsForProfile> GetDetailsForProfileById(int id);
+    Task<int> ChangePasswordByUserIdAsync(int userId, string newPassword);
 }
