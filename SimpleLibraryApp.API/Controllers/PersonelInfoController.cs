@@ -29,4 +29,8 @@ public class PersonelInfoController
     [HttpGet("get-details-for-profile")]
     public async Task<IActionResult> GetDetailsForProfileByUserIdAsync([FromQuery] Service.PersonelInfo.Queries.GetProfileDetailsByUserId.Query query)
         => new ObjectResult(await _mediator.Send(query));
+
+    [HttpPut("change-password")]
+    public async Task<IActionResult> ChangePasswordByUserIdAsync([FromBody] Service.PersonelInfo.Commands.ChangePasswordByUserId.Command command)
+        => new ObjectResult(await _mediator.Send(command));
 }
