@@ -16,7 +16,7 @@ public class Handler : IRequestHandler<Query, GenericDataResponse<Dto>>
 
     public async Task<GenericDataResponse<Dto>> Handle(Query request, CancellationToken cancellationToken)
     {
-        var profileDetails = await _authRepository.GetDetailsForProfileById(request.UserId);
+        var profileDetails = await _authRepository.GetDetailsForProfileByIdAsync(request.UserId);
 
         if (profileDetails is null)
         {

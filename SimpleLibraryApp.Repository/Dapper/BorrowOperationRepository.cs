@@ -16,6 +16,17 @@ public class BorrowOperationRepository : IBorrowOperationRepository
         _transaction = transaction;
     }
 
+    public async Task<List<BorrowOperationDetailsForBorrowedBooks>> GetBorrowedBookDetailsByUserIdAsync(int userId)
+    {
+        var parameters = new DynamicParameters();
+        parameters.Add("@user_id", userId, DbType.Int32);
+
+        var sql = $@"SELECT * FROM ""public"".""BorrowOperations_GetDetailsByUserId""(@user_id)";
+        var result = await _connection.QueryAsync<BorrowOperationDetailsForBorrowedBooks>(sql, parameters);
+
+        return result.ToList();
+    }
+
     public async Task<List<BorrowOperationDetailsForUser>> GetDetailsForUserByUserIdAsync(int userId)
     {
         var parameters = new DynamicParameters();
@@ -27,7 +38,7 @@ public class BorrowOperationRepository : IBorrowOperationRepository
         return result.ToList();
     }
 
-    public async Task<List<BorrowOperationDetailsForReadedBooksByUser>> GetReadedBooksByUserId(int userId)
+    public async Task<List<BorrowOperationDetailsForReadedBooksByUser>> GetReadedBooksByUserIdAsync(int userId)
     {
         var parameters = new DynamicParameters();
         parameters.Add("@user_id", userId, DbType.Int32);
@@ -38,7 +49,7 @@ public class BorrowOperationRepository : IBorrowOperationRepository
         return result.ToList();
     }
 
-    public async Task<List<BorrowOperationDetailsForFavouriteCategoriesByUser>> GetReadedBooksWithCategoryByUserId(int userId)
+    public async Task<List<BorrowOperationDetailsForFavouriteCategoriesByUser>> GetReadedBooksWithCategoryByUserIdAsync(int userId)
     {
         var parameters = new DynamicParameters();
         parameters.Add("@user_id", userId, DbType.Int32);

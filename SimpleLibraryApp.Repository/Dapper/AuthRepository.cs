@@ -27,7 +27,7 @@ public class AuthRepository : IAuthRepository
         return result;
     }
 
-    public async Task<User> GetById(int id)
+    public async Task<User> GetByIdAsync(int id)
     {
         var parameters = new DynamicParameters();
         parameters.Add("@id", id, DbType.Int32);
@@ -38,7 +38,7 @@ public class AuthRepository : IAuthRepository
         return result;
     }
 
-    public async Task<UserDetailsForProfile> GetDetailsForProfileById(int id)
+    public async Task<UserDetailsForProfile> GetDetailsForProfileByIdAsync(int id)
     {
         var parameters = new DynamicParameters();
         parameters.Add("@id", id, DbType.Int32);

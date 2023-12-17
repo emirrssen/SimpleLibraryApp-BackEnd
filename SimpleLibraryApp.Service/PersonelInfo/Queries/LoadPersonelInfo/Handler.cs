@@ -26,7 +26,7 @@ public class Handler : IRequestHandler<Query, GenericDataResponse<Dto>>
     public async Task<GenericDataResponse<Dto>> Handle(Query request, CancellationToken cancellationToken)
     {
         var dtoToReturn = new Dto();
-        var currentUser = await _authRepository.GetById(request.UserId);
+        var currentUser = await _authRepository.GetByIdAsync(request.UserId);
 
         if (currentUser is null)
         {

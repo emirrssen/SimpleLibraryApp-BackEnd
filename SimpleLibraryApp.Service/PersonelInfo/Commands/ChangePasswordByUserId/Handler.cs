@@ -18,7 +18,7 @@ public class Handler : IRequestHandler<Command, BaseResponse>
 
     public async Task<BaseResponse> Handle(Command request, CancellationToken cancellationToken)
     {
-        var currentUser = await _authRepository.GetById(request.UserId);
+        var currentUser = await _authRepository.GetByIdAsync(request.UserId);
         if (currentUser is null)
         {   
             _transaction.Rollback();

@@ -17,7 +17,7 @@ public class QueryHandler : IRequestHandler<Query, GenericDataResponse<List<Dto>
 
     public async Task<GenericDataResponse<List<Dto>>> Handle(Query request, CancellationToken cancellationToken)
     {
-        var readedBooks = await _borrowOperationRepository.GetReadedBooksByUserId(request.UserId);
+        var readedBooks = await _borrowOperationRepository.GetReadedBooksByUserIdAsync(request.UserId);
 
         if (!readedBooks.Any())
         {

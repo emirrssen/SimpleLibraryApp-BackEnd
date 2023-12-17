@@ -15,7 +15,7 @@ public class BookRepository : IBookRepository
         _transaction = transaction;
     }
 
-    public async Task<List<BookDetailForRecommendation>> GetBookDetailByAuthorId(int authorId)
+    public async Task<List<BookDetailForRecommendation>> GetBookDetailByAuthorIdAsync(int authorId)
     {
         var parameters = new DynamicParameters();
         parameters.Add("@author_id", authorId, DbType.Int32);
