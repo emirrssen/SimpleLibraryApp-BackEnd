@@ -60,6 +60,17 @@ public class AuthRepository : IAuthRepository
         return result;
     }
 
+    public async Task<List<UserDetailsForAdmin>> GetUserDetailsByNameOrEmail(string searchText)
+    {
+        var parameters = new DynamicParameters();
+        parameters.Add("@search_text", searchText, DbType.String);
+
+        var sql = $@"SELECT * FROM ""public"".""Users_SearchByNameOrEmail""(@search_text)";
+        var result = await _connection.QueryAsync<UserDetailsForAdmin>(sql, parameters);
+
+        return result.ToList();
+    }
+
     public async Task<int> InsertUserAsync(User user)
     {
         var parameters = new DynamicParameters();
