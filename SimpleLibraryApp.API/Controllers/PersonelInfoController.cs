@@ -33,4 +33,16 @@ public class PersonelInfoController
     [HttpPut("change-password")]
     public async Task<IActionResult> ChangePasswordByUserIdAsync([FromBody] Service.PersonelInfo.Commands.ChangePasswordByUserId.Command command)
         => new ObjectResult(await _mediator.Send(command));
+
+    [HttpGet("admin-user-search")]
+    public async Task<IActionResult> GetUserDetailsByNameOrEmailAsync([FromQuery] Service.PersonelInfo.Queries.GetUserDetailsByNameOrEmail.Query query)
+        => new ObjectResult(await _mediator.Send(query));
+
+    [HttpPut("update-email")]
+    public async Task<IActionResult> UpdateEmailByUserIdAsync([FromQuery] Service.PersonelInfo.Commands.ChangeEmailByUserId.Command command)
+        => new ObjectResult(await _mediator.Send(command));
+
+    [HttpPut("delete-account")]
+    public async Task<IActionResult> DeleteAccountByUserIdAsync([FromQuery] Service.PersonelInfo.Commands.DeleteAccountByUserId.Command command)
+        => new ObjectResult(await _mediator.Send(command));
 }

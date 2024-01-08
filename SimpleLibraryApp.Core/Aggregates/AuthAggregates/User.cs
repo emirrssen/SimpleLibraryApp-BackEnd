@@ -11,4 +11,6 @@ public class User
     public string NationalityId { get; set; }
     public string Email { get; set; }
     public string Password { get; set; }
+    public DateTime AccountStartDate { get; set; }
+    public DateTime? AccountEndDate { get; set; }
 }
