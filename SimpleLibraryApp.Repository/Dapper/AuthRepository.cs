@@ -15,6 +15,18 @@ public class AuthRepository : IAuthRepository
         _transaction = transaction;
     }
 
+    public async Task<int> ChangeEmailByUserIdAsync(int userId, string newEmail)
+    {
+        var parameters = new DynamicParameters();
+        parameters.Add("@user_id", userId, DbType.Int32);
+        parameters.Add("@new_email", newEmail, DbType.String);
+
+        var sql = $@"SELECT * FROM ""public"".""Users_UpdateEmailById""(@user_id, @new_email)";
+        var result = await _connection.QuerySingleOrDefaultAsync<int>(sql, parameters, transaction: _transaction);
+
+        return result;
+    }
+
     public Task<int> ChangePasswordByUserIdAsync(int userId, string newPassword)
     {
         var parameters = new DynamicParameters();
@@ -23,6 +35,17 @@ public class AuthRepository : IAuthRepository
 
         var sql = $@"SELECT * FROM ""public"".""Users_UpdatePasswordByUserId""(@user_id, @new_password)";
         var result = _connection.QuerySingleOrDefaultAsync<int>(sql, parameters, transaction: _transaction);
+
+        return result;
+    }
+
+    public async Task<int> DeleteAccountByUserIdAsync(int userId)
+    {
+        var parameters = new DynamicParameters();
+        parameters.Add("@user_id", userId, DbType.Int32);
+
+        var sql = $@"SELECT * FROM ""public"".""Users_DeleteById""(@user_id)";
+        var result = await _connection.QuerySingleOrDefaultAsync<int>(sql, parameters, transaction: _transaction);
 
         return result;
     }

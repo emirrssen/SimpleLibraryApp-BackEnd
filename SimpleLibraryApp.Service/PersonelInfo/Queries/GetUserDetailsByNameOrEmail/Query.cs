@@ -5,5 +5,5 @@ namespace SimpleLibraryApp.Service.PersonelInfo.Queries.GetUserDetailsByNameOrEm
 
 public class Query : IRequest<GenericDataResponse<List<Dto>>>
 {
-    public string SearchText { get; set; }
+    public string? SearchText { get; set; }
 }
